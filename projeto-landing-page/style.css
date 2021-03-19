@@ -1,0 +1,1027 @@
+/* import Product Sans font file ---------------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Product Sans';
+    src: url(fonts/product-sans-regular.ttf);
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url(fonts/product-sans-bold.ttf);
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+/* body --------------------------------------------------------------------------------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 228);
+    font-family: 'Product Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+/* sample normalize css ----------------------------------------------------------------------------------------------------------- */
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header-------------------------------------------------------------------------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 500px;
+    padding: 30px 150px;
+    position: relative;
+    top: 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(31, 31, 31);
+}
+
+#menu {
+    width: 1050px;
+    height: 30px;
+    background-color: rgb(212, 212, 212);
+    position: fixed;
+    top: 70px;
+    z-index: 999;
+    display: none;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-button  a {
+    font-size: 20pt;
+    color: whitesmoke;
+}
+
+.logo {
+    margin: 0px;
+}
+
+.reg-btn {
+    background-color: #313131;
+    color: rgb(197, 196, 196);
+    padding: 10px 30px;
+    margin: 0px;
+    border-radius: 20px;
+}
+
+/* nav ---------------------------------------------------------------------------------------------------------------------------- */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a  {
+    color: rgb(197, 196, 196);
+    margin: 0px 20px;
+}
+
+/* main---------------------------------------------------------------------------------------------------------------------------- */
+main {
+    padding: 10px 150px;
+}
+
+/* home-section-------------------------------------------------------------------------------------------------------------------- */
+.home-section {
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 1050px;
+    height: 500px;
+    position: absolute;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.089);
+}
+
+.arrow img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.start-btn {
+    padding: 12px 60px;
+    background-color: #F46632;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.home-text {
+    width: 420px;
+    margin-top: -50px;
+}
+
+.home-text h2 {
+    font-size: 25pt;
+}
+
+.pf-1 {
+    margin-top: -15px;
+    font-size: 17pt;
+    color: rgb(184, 184, 184);
+}
+
+.pf-text {
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    line-height: 40px;
+    font-size: 13pt;
+    font-family: "Product Sans", "Regular";
+    flex-wrap: wrap;
+}
+
+/* about-us section --------------------------------------------------------------------------------------------------------------- */
+
+
+.about-container {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    margin-top: -220px;
+    padding: 0px 90px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.13);
+}
+
+.about-header {
+    margin-top: 130px;
+    padding: 0px 80px;
+    display:flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.about-logo {
+    margin-top: -400px;
+}
+
+.social1 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social1 a {
+    font-size: 16pt;
+    color: black;
+}
+
+.about-text {
+    margin-top: 270px;
+    line-height: 35px;
+    font-size: 12pt;
+}
+
+/* Course Experience -------------------------------------------------------------------------------------------------------------- */
+.course-expe {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 90px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.123);
+}
+
+.table-line {
+    border: 2px solid black;
+    width: 700px;
+    margin-top: 30px;
+    height: 35px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c2,.c3 {
+    border-left: 2px solid black;
+    padding-top: 7px;
+    height: 32px;
+}
+
+.c3 {
+    background-color: black;
+    color: white;
+}
+
+.table-line p {
+    padding: 6px 30px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.course-content img {
+    width: 200px;
+}
+
+.course-content {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-text {
+    line-height: 33px;
+    font-size: 13pt;
+    margin-left: 20px;
+    width: 650px;
+}
+
+/* Sessions ----------------------------------------------------------------------------------------------------------------------- */
+.sessions {
+    margin-top: 60px;
+    padding: 30px 90px;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.164);
+}
+
+.sessions-logo {
+    margin-bottom: 30px;
+}
+
+.session {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.session-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    background-color: rgb(224, 224, 224);
+    height: 30px;
+    border-left: 4px solid black;
+}
+
+.session-title p {
+    display: flex;
+    align-items: center;
+}
+
+.session-title img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.session-number {
+    font-weight: bold;
+}
+
+.session-content {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid rgb(230, 230, 230);
+}
+.session-content img {
+    margin-right: 20px;
+    width: 60px;
+}
+
+.session-text {
+    width: 600px;
+    line-height: 30px;
+    margin-left: 40px;
+}
+
+/* masters --------------------------------------------------------------------------------------------------------------------- */
+.masters {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 90px;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.164);
+}
+
+.profiles {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 150px;
+    margin: 0px 10px;
+}
+
+.profile p {
+    font-size: 13pt;
+}
+
+.profile img{
+    width: 100px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+/* faq ---------------------------------------------------------------------------------------------------------------------------- */
+.faq {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 90px;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.faq-title {
+    margin-bottom: 30px;
+}
+
+.question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px rgba(97, 97, 97, 0.158);
+}
+
+.question-text {
+    font-size: 13pt;
+}
+
+.question a {
+    color: rgb(78, 78, 78);
+}
+
+/* course fee --------------------------------------------------------------------------------------------------------------------- */
+.course-fee {
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 10px;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 60px rgba(97, 97, 97, 0.158);
+}
+
+.coursefee-content {
+    width: 100%;
+    margin-top: -10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coursefee-content img {
+    width: 30px;
+}
+
+.achiev-title {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.check {
+    color: rgb(22, 187, 22);
+    margin-right: 10px;
+}
+
+.price-card {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    border-radius: 15px;
+    text-align: center;
+    color:whitesmoke;
+}
+
+.price-card a {
+    padding: 10px 30px;
+    width: 150px;
+    margin: auto;
+    margin-top: -10px;
+    background-color: #F46632;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.p1,.p2 {
+    font-weight: bold;
+}
+
+.p1 {
+    text-decoration-line: line-through;
+}
+
+.num1 {
+    font-size: 16pt;
+}
+
+.num2 {
+    font-size: 20pt;
+}
+
+.min-info {
+    color: rgb(221, 221, 221);
+    margin-bottom: 30px;
+}
+
+.achievements {
+    width: 550px;
+    font-size: 11pt;
+}
+
+.item {
+    margin-bottom: 30px;
+    font-family: "Product Sans", "Regular";
+    font-size: 13pt;
+}
+
+.foot-info {
+    color: rgb(165, 165, 165);
+    margin-top: 20px;
+}
+
+/* request ------------------------------------------------------------------------------------------------------------------------ */
+.request {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    background-color: black;
+    width: 100%;
+    padding: 0px 120px;
+    height: 350px;
+}
+
+.form {
+    margin-top: 40px;
+    width: 550px;
+}
+
+.form p {
+    color: rgb(172, 172, 172);
+}
+
+.form h4 {
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.form input {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(165, 165, 165);
+}
+
+/* projects ----------------------------------------------------------------------------------------------------------------------- */
+.projects-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    width: 100%;
+    height: 600px;
+    padding: 30px 120px;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-content {
+    width: 100%;
+    display: flex;
+    margin-top: -400px;
+    justify-content: space-between;
+}
+
+.content-text {
+    line-height: 30px;
+    width: 450px;
+}
+
+.square {
+    background-color: rgb(224, 224, 224);
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top:8px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+.b-square {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(236, 236, 236);
+    opacity: 1;
+    border-radius: 15px;
+    padding-top: 60px;
+}
+
+.retangule {
+    width: 180px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 10px 10px 60px rgba(117, 117, 117, 0.322);
+}
+
+.arrow-btn {
+    width: 300px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.arrow-btn a {
+    padding: 10px 15px;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    color: rgb(88, 88, 88);
+    text-align: center;
+}
+
+/* schedule ----------------------------------------------------------------------------------------------------------------------- */
+.schedule {
+    width: 100%;
+    padding: 30px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.course {
+    width: 900px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.course p{
+    font-weight: bold;
+    font-size: 20pt;
+    padding-bottom: 5px;
+}
+
+p.course-stage {
+    color: rgb(31, 31, 31);
+    font-size: 14pt;
+    margin: 0px 30px;
+}
+
+.card-date {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card1,.card2 {
+    width: 350px;
+    height: 80px;
+    padding: 20px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+    box-shadow: 10px 10px 60px rgba(117, 117, 117, 0.322);
+    cursor: pointer;
+}
+
+.days-left {
+    width: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-num {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 16pt;
+    border-radius: 5px;
+}
+
+.day-text {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.sign-up {
+    padding: 10px 40px;
+    background-color: #F46632;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+footer {
+    height: 150px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-links {
+    width: 200px;
+}
+
+.social-links a {
+    color: black;
+    font-size: 16pt;
+    margin: 0px 20px;
+}
+
+/* media querie ------------------------------------------------------------------ */
+@media (min-width: 320px) and (max-width: 800px) {
+
+    body{
+        width: 100%;
+    }
+
+    nav,.register {
+        display: none;
+    }
+
+    header {
+        padding: 10px 20px;
+        width: 100%;
+    } 
+
+    .menu-button {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        padding: 10px 20px;
+        width: 100%;
+        top:0;
+        margin-left: -20px;
+        height: max-content;
+        background-color: rgb(32, 32, 32);
+        border-bottom: 4px solid rgb(238, 131, 44);
+    }
+
+    #menu a {
+        width: max-content;
+        color: whitesmoke;
+        padding: 5px;
+        border-bottom: 3px solid rgb(54, 54, 54);
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+
+
+    main {
+        width: 100%;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .home-section {
+        flex: 1;
+        flex-direction: column-reverse;
+        height: max-content;
+        width: calc(100% - 40px);
+        margin-top: -30px;
+        padding: 30px 20px;
+    }
+
+    .home-text {
+        width: 300px;
+    }
+
+    .home-text h2 {
+        font-size: 18pt;
+        margin-top: 50px;
+    }
+
+    .pf-text {
+        width: 250px;
+        line-height: 25px;
+        margin-top: -15px;
+        margin-bottom: 40px;
+    }
+
+    .home-img img{
+        width: 230px;
+        height: 180px;
+        margin-left: -20px;
+    }
+
+    .start-btn {
+        margin-top: 10px;
+        margin-left: 28px;
+    }
+
+    .about-us {
+        width: calc(100% - 40px);
+        flex-direction: column-reverse;
+    }
+
+    .about-header img {
+        width: 230px;
+        margin-left: 25px;
+    }
+
+    .about-header {
+        padding: 20px;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-factory {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .about-logo {
+        display: block;
+        margin: 100px auto;
+    }
+
+    .about-text {
+        margin-top: 150px;
+        line-height: 25px;
+    }
+
+    .social1 {
+        display: none;
+    }
+
+    .about-container {
+        padding: 20px;
+        height: max-content;
+        margin-top: -220px;
+    }
+
+    .course-expe {
+        width: calc(100% - 40px);
+    }
+
+    .course-content {
+        padding: 20px;
+        flex-direction: column;
+        margin-top: -20px;
+    }
+
+    .course-text {
+        width: 280px;
+        line-height: 25px;
+        font-size: 13pt;
+    }
+
+
+    .table-line {
+        display: none;
+    }
+
+    .sessions {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    p.durat,p.date,p.play {
+        display: none;
+    }
+
+    .session-text {
+        width: 240px;
+        font-size: 10pt;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .session-content {
+        font-size: 9pt;
+        padding: 0px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .course-logo img,
+    .sessions-logo img,
+    .masters-logo img,
+    .faq-title img,
+    .course-title img,
+    .projects-title img,
+    .schedule-title img {
+        width: 230px;
+    }
+
+    .masters {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .profiles {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile img {
+        width: 130px;
+    }
+    
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .faq {
+        width: calc(100% - 40px);
+    }
+
+    .question {
+        width: 300px;
+    }
+
+    .course-fee {
+        width: calc(100% - 40px);
+    }
+
+    .coursefee-content {
+        flex-direction: column;
+    }
+
+    .coursefee-content img {
+        display: none;
+    }
+
+    .achievements {
+        width: 280px;
+    }
+
+    .request {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .form {
+        width: calc(100% - 40px);
+    }
+
+    .projects {
+        padding: 20px;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .projects-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-content {
+        width: 320px;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .content-text {
+        width: 300px;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .schedule {
+        width: 100%;
+        padding: 0px 10px;
+        height: max-content;
+        padding-bottom: 20px;
+    }
+
+    .card-date {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card1,.card2 {
+        width: 300px;
+    }
+
+    .card1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .course {
+        display: none;
+    }
+
+    .days-left {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+    }
+}
